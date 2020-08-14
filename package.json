@@ -4,8 +4,7 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "test": "npx eleventy --serve",
-    "build": "npx eleventy"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/romanwojciechowski/personal_website/issues"
   },
-  "homepage": "https://github.com/romanwojciechowski/personal_website#readme"
+  "homepage": "https://github.com/romanwojciechowski/personal_website#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
 }
