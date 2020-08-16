@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Wojciechowski</title>
+</head>
+<body>
+    <container class="wrapper">
+        <section class="wrapper__leftbar">
+            <a class="wrapper__leftbar__title" href="/">Roman Wojciechowski</a>
+            <ul class="wrapper__leftbar__language">
+                <li><a href="">PL</a></li>
+                <li><a href="">EN</a></li> 
+            </ul>
+
+            <ul class="wrapper__leftbar__navigation">
+                <li><a href="/email">email</a></li>
+                <li><a href="/biblioteka">biblioteka</a></li>
+                <li><a href="/zdjecia">zdjęcia</a></li>
+                <li><a href="https://github.com/romanwojciechowski">github</a></li>
+                <li><a href="https://blog.romanwojciechowski.xyz">blog</a></li>       
+            </ul>
+
+            <footer>
+            <a href="https://romanwojciechowski.netlify.app">Roman Wojciechowski</a>, 2020
+            </footer>
+        </section>
+
+        <section class="wrapper__rightbar">
+            <container class="wrapper__rightbar__main">
+                <div class="wrapper__rightbar__main__buttons"></div>
+
+                <div class="wrappper__rightbar__main__location">
+                Location: <div class="wrapper__rightbar__main__location__box">{{location}}</div>
+                </div>
+                <div class"wrapper__rightbar__main__content">
+                    {{content | safe}}
+                </div>
+            </container>
+        </section>
+    </container>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 layout: default-layout.njk
-location: /home/roman
+location: /home/roman/email
 ---
 
-# Homepage
+# email
