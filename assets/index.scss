@@ -1,0 +1,41 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "left right right right" "left right right right" "left right right right";
+
+    &__leftbar { 
+        grid-area: left;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        min-height: 100vh;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+            &__language {
+                display: flex;
+            }
+        }
+    }
+
+    &__rightbar { 
+        grid-area: right;
+    }
+  }
