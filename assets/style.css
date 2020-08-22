@@ -30,7 +30,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 25px 0 0 25px;
+  padding: 25px 0 10px 25px;
   min-height: 100vh;
 }
 
@@ -61,6 +61,20 @@ ul {
   color: rgb(90, 90, 90);
 }
 
+.wrapper__leftbar__footer {
+  color: rgb(90, 90, 90);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.wrapper__leftbar__footer a{
+  color: rgb(90, 90, 90);
+}
+
+.wrapper__leftbar__footer a:hover {
+  color: #000;
+}
+
 .wrapper__rightbar {
   grid-area: right;
   display: flex;
@@ -68,14 +82,63 @@ ul {
 }
 
 .wrapper__rightbar__main {
+  display: flex;
+  flex-direction: column;
   height: 800px;
   width: 1000px;
   background-color: #F3F3F3;
   padding: 60px 40px 0 40px;
+  border-radius: 3px;
+  border: 1px solid silver;
+}
+
+.wrapper__rightbar__main__title {
+  position: relative;
+  top: -40px;
+}
+
+.wrapper__rightbar__main__buttons {
+  position: relative;
+  align-self: flex-end;
+  top: -80px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #C4C4C4;
+}
+
+.wrapper__rightbar__main__buttons::before, .wrapper__rightbar__main__buttons::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: #C4C4C4;
+}
+
+.wrapper__rightbar__main__buttons::before {
+  right: -15px;
+}
+
+.wrapper__rightbar__main__buttons::after {
+  left: -15px;
 }
 
 .wrapper__rightbar__main__location__box {
   display: flex;
+  align-items: center;
   width: 100%;
   border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+
+.wrapper__rightbar__main__location__box__container {
+  margin-left: 10px;
+  padding: 2px;
+  min-width: 170px;
+  border-radius: 2px;
+  height: 24px;
+  background-color: #C4C4C4;
+  font-size: 15px;
+  font-weight: 300;
 }
