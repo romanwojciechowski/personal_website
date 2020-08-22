@@ -2,31 +2,43 @@ html, body, * {
     margin: 0;
     padding: 0;
     background-color: red;
-  }
+    font-family: 'Frank Ruhl Libre', serif;
+}
   
-  a {
-    text-decoration: none; }
+a {
+  text-decoration: none;
+}
   
-  ul {
-    list-style: none; }
+ul {
+  list-style: none;
+}
   
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "left right right right" "left right right right" "left right right right"; }
-    .wrapper__leftbar {
-      grid-area: left;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      min-height: 100vh; }
-      .wrapper__leftbar__header {
-        display: flex;
-        justify-content: space-between; }
-        .wrapper__leftbar__header__language {
-          display: flex; }
-    .wrapper__rightbar {
-      grid-area: right; }
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "left right right right" "left right right right" "left right right right"; 
+}
+
+.wrapper__leftbar {
+  grid-area: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper__leftbar__header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper__leftbar__header__language {
+  display: flex;
+}
+
+.wrapper__rightbar {
+  grid-area: right;
+}
   
