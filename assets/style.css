@@ -1,7 +1,7 @@
 body, *{
     margin: 0;
     padding: 0;
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Lato', serif;
 }
 
 * {
@@ -90,10 +90,6 @@ table td {
 
 .wrapper__leftbar__header__language {
   display: flex;
-}
-
-.wrapper__leftbar__navigation {
-  
 }
 
 .wrapper__leftbar__navigation li:nth-last-child(3) {
