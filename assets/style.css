@@ -83,13 +83,15 @@ table td {
   margin-bottom: 10rem;
 }
 
-.wrapper__leftbar__header__title {
+.wrapper__leftbar__header__top__title {
   font-weight: 900;
   font-size: 1.6em;
 }
 
-.wrapper__leftbar__header__language {
+.wrapper__leftbar__header__top__language {
   display: flex;
+  justify-content: space-between;
+  width: 50px;
 }
 
 .wrapper__leftbar__navigation li:nth-last-child(3) {
